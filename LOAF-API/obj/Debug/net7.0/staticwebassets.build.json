@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nfuRUiX3yADhUn9GNNCybXMdWybajk70oPkOLzFnnCg=",
+  "Source": "LOAF-API",
+  "BasePath": "_content/LOAF-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
