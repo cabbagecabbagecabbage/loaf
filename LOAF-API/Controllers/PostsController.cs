@@ -1,43 +1,52 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LOAF_API.Data;
+using LOAF_API.Data.Contexts;
+using LOAF_API.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace LOAF_API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Posts")]
     [ApiController]
     public class PostsController : ControllerBase
     {
-        // GET: api/<PostsController>
+        private readonly LOAFDbContext _LOAFDbContext;
+        public PostsController(LOAFDbContext loafDbContext)
+        {
+            _LOAFDbContext = loafDbContext;
+        }
+
+        // GET: api/Posts
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> GetAllPosts()
         {
-            return new string[] { "value1", "value2" };
+            var posts = await _LOAFDbContext.Posts.ToListAsync();
+            return Ok(posts);
         }
-
-        // GET api/<PostsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<PostsController>
+        
+        // POST api/Posts
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> AddPost([FromBody] Post post)
         {
+            await _LOAFDbContext.Posts.AddAsync(post);
+            await _LOAFDbContext.SaveChangesAsync();
+
+            return Ok(post);
         }
 
-        // PUT api/<PostsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        // GET api/Posts/5
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPostById(int id)
         {
-        }
+            var post = await _LOAFDbContext.Posts.FindAsync(id);
+            if (post == null)
+            {
+                return NotFound();
+            }
 
-        // DELETE api/<PostsController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return Ok(post);
         }
     }
 }
