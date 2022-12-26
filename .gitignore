@@ -1,4 +1,4 @@
-.vs
+./LOAF-API/vs
 ./LOAF-API/bin
 ./LOAF-API/obj
 ./LOAF-API/appsettings.Development.json
