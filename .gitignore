@@ -2,6 +2,8 @@
 /LOAF-API/bin
 /LOAF-API/obj
 /LOAF-API/appsettings.Development.json
+/LOAF-API/appsettings.json
 /LOAF-API/LOAF.db
 /LOAF-API/LOAF-API.sln
 /LOAF-API/Properties
+/LOAF-API/LOAF-API.csproj.user
