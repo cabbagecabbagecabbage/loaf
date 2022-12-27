@@ -8,5 +8,7 @@
   <p>
     {{ postResponse.content }}
   </p>
-  
+  <div *ngFor="let comment of commentsResponse">
+    <p>{{comment.content}}</p>
+  </div>
 </div>

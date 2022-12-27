@@ -4,12 +4,12 @@ Backend:
     search post by keyword
     image in form
     reporting system
+    search entries by keyword
 
 
 Frontend:
     ui design
-    display comments on individual posts page
-    search bar functionality
+    search bar
     latex rendering
 
 
