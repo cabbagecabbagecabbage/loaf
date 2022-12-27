@@ -11,9 +11,12 @@ export class PostsService {
   baseApiUrl: string = environment.apiUrl;
   constructor(private http: HttpClient) { }
   getAllPosts() : Observable<Post[]>{
-    return this.http.get<Post[]>(this.baseApiUrl+'/posts')
+    return this.http.get<Post[]>(this.baseApiUrl+'/posts');
   }
   createPost(createPostRequest: Post) : Observable<Post> {
     return this.http.post<Post>(this.baseApiUrl+'/posts', createPostRequest);
+  }
+  getPost(id: string) : Observable<Post>{
+    return this.http.get<Post>(this.baseApiUrl + '/posts/' + id);
   }
 }

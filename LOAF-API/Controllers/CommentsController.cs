@@ -2,6 +2,7 @@
 using LOAF_API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 
 namespace LOAF_API.Controllers
 {
@@ -32,6 +33,7 @@ namespace LOAF_API.Controllers
         public async Task<IActionResult> AddCommentToPost(int postId, [FromBody] Comment comment)
         {
             comment.PostId = postId;
+            comment.Date = System.DateTime.Now.ToString();
             await _LOAFDbContext.Comments.AddAsync(comment);
             await _LOAFDbContext.SaveChangesAsync();
 

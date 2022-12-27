@@ -1,0 +1,9 @@
+.content:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+td a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}

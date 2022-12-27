@@ -1,23 +1,16 @@
 Backend:
-    create post
-    reply to post
-    get list of posts (sorted by recent)
+    sorted posts by recent
     get posts by tag
-    pin post to top
-        config file to limit
     search post by keyword
     image in form
     reporting system
-    
+
 
 Frontend:
-    design ui
-    create main page
-    display list of posts
-    create individual post page
-        display replies
-    create post form
+    ui design
+    display comments on individual posts page
     search bar functionality
+    latex rendering
 
 
 Meta:

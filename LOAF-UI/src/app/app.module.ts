@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { CreatePostComponent } from './components/create-post/create-post.component';
 import { FormsModule } from '@angular/forms';
+import { ViewPostComponent } from './components/view-post/view-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsListComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    ViewPostComponent
   ],
   imports: [
     BrowserModule,

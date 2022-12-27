@@ -38,8 +38,9 @@ namespace LOAF_API.Controllers
         }
 
         // GET api/Posts/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetPostById(int id)
+        [HttpGet]
+        [Route("{id:int}")]
+        public async Task<IActionResult> GetPostById([FromRoute] int id)
         {
             var post = await _LOAFDbContext.Posts.FindAsync(id);
             if (post == null)
