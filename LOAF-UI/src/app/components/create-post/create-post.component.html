@@ -1,0 +1,37 @@
+<div class="container">
+  <h1 class="mb-3">Create A Post</h1>
+  <form #form="ngForm" (ngSubmit)="createPost()">
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        name="title"
+        [(ngModel)]="createPostRequest.title"
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Content</label>
+      <input
+        type="text"
+        class="form-control"
+        id="content"
+        name="content"
+        [(ngModel)]="createPostRequest.content"
+      />
+    </div>
+    <label class="form-label">Tag</label>
+    <select
+      class="form-select mb-3"
+      id="tag"
+      name="tag"
+      [(ngModel)]="createPostRequest.tag"
+    >
+      <option value="Chemistry">Chemistry</option>
+      <option value="Physics">Physics</option>
+      <option value="Biology">Biology</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

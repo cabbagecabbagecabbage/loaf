@@ -30,6 +30,7 @@ namespace LOAF_API.Controllers
         [HttpPost]
         public async Task<IActionResult> AddPost([FromBody] Post post)
         {
+            post.Date = System.DateTime.Now.ToString();
             await _LOAFDbContext.Posts.AddAsync(post);
             await _LOAFDbContext.SaveChangesAsync();
 
