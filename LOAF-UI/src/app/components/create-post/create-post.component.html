@@ -1,5 +1,5 @@
-<div class="container">
-  <h1 class="mb-3">Create A Post</h1>
+<div class="container" style="width: 60%;">
+  <h1 class="mb-5 mt-5">Ask A Question</h1>
   <form #form="ngForm" (ngSubmit)="createPost()">
     <div class="mb-3">
       <label class="form-label">Title</label>
@@ -9,16 +9,7 @@
         id="title"
         name="title"
         [(ngModel)]="createPostRequest.title"
-      />
-    </div>
-    <div class="mb-3">
-      <label class="form-label">Content</label>
-      <input
-        type="text"
-        class="form-control"
-        id="content"
-        name="content"
-        [(ngModel)]="createPostRequest.content"
+        style="resize: none;"
       />
     </div>
     <label class="form-label">Tag</label>
@@ -28,10 +19,26 @@
       name="tag"
       [(ngModel)]="createPostRequest.tag"
     >
+      <option value="General">General</option>
       <option value="Chemistry">Chemistry</option>
       <option value="Physics">Physics</option>
       <option value="Biology">Biology</option>
+      <option value="Math">Math</option>
+      <option value="English">English</option>
+      <option value="Misc">Misc</option>
     </select>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="mb-3">
+      <label class="form-label">Content</label>
+      <textarea
+        type="text"
+        class="form-control"
+        id="content"
+        name="content"
+        rows="5"
+        [(ngModel)]="createPostRequest.content"
+        style="resize: none;"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Post</button>
   </form>
 </div>

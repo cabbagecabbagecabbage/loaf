@@ -1,14 +1,47 @@
-<div class="container">
-  <h1>
-    {{ postResponse.title }}
-  </h1>
-  <p>
-    {{ postResponse.date }}
-  </p>
-  <p>
-    {{ postResponse.content }}
-  </p>
-  <div *ngFor="let comment of commentsResponse">
-    <p>{{comment.content}}</p>
+<div class="container" style="width:60%;">
+  <div class="card mt-5 mb-5">
+    <div class="card-body">
+      <h2 [mathjax]="postResponse.title">
+      </h2>
+      <hr style="border-color: black;">
+      <p class="mb-5">
+        {{ postResponse.date }}
+      </p>
+      <p [mathjax]="postResponse.content">
+        <!-- {{ postResponse.content }} -->
+      </p>
+    </div>
+  </div>
+  <hr style="margin: 50px 0;">
+  <h4 class="mb-4">Answers</h4>
+  <div class="container text-left mb-5" style="padding-left: 0 !important; padding-right: 0 !important;">
+    <div class="card mx-0 mb-3" *ngFor="let comment of commentsResponse">
+      <div class="card-body">
+        <p class="card-text" style="white-space: pre-wrap;" [mathjax]="comment.content"></p>
+        <div class="d-flex justify-content-between align-items-center">
+          <!-- <small class="text-muted">{{comment.author}}</small> -->
+          <small class="text-muted">{{comment.date | date:'short'}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 50px 0;">
+  <div class="mt-4 mb-4">
+    <h4 class="mb-4">Post an answer!</h4>
+    <form #form="ngForm" (ngSubmit)="createComment()">
+      <div class="mb-3">
+        <!-- <label for="content" class="form-label"></label> -->
+        <textarea
+          type="text"
+          class="form-control my-3"
+          id="content"
+          name="content"
+          [(ngModel)]="createCommentRequest.content"
+          style="resize: none;"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
 </div>

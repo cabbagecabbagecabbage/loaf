@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="width: 80%;">
   <table class="table">
     <thead>
       <tr>
@@ -12,13 +12,13 @@
       <!-- <div [routerLink]="['post','post.id']"> -->
       <tr class="content" *ngFor="let post of posts">
         <!-- <th scope="row">{{ post.id }}</th> -->
-        <td>
+        <td class="title-col">
           <a [routerLink]="['posts', post.id]">{{ post.title }}</a>
         </td>
-        <td>
+        <td class="tag-col">
           <a [routerLink]="['posts', post.id]">{{ post.tag }}</a>
         </td>
-        <td>
+        <td class="date-col">
           <a [routerLink]="['posts', post.id]">{{
             post.date | date : "MM/dd/yyyy h:mm a"
           }}</a>

@@ -1,17 +1,15 @@
-Backend:
-    sorted posts by recent
+Features:
+    search function
+    number of comments on post
+    swal on post/comment creation
     get posts by tag
-    search post by keyword
+
+Backend:
     image in form
     reporting system
-    search entries by keyword
-
 
 Frontend:
     ui design
-    search bar
-    latex rendering
-
 
 Meta:
     host the project

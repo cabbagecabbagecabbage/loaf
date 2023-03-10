@@ -1,0 +1,25 @@
+h4 {
+  color: rgb(216, 216, 216);
+}
+
+.card {
+  background-color: rgb(216, 216, 216) !important;
+}
+
+hr {
+  border-color: white;
+}
+
+#content {
+  height: auto;
+  min-height: 200px; /* or whatever minimum height you want */
+}
+
+#content:focus {
+  outline: none;
+}
+
+#content:not(:focus) {
+  height: auto;
+  overflow: hidden;
+}

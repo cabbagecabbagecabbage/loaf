@@ -23,4 +23,8 @@ export class PostsService {
   getComments(id: string) : Observable<PostComment[]>{
     return this.http.get<PostComment[]>(this.baseApiUrl+'/comments/post/' + id);
   }
+  createComment(createCommentRequest: PostComment, id: string) : Observable<PostComment>{
+    console.log(createCommentRequest);
+    return this.http.post<PostComment>(this.baseApiUrl+'/comments/post/' + id, createCommentRequest);
+  }
 }

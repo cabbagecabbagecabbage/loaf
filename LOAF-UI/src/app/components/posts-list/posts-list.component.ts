@@ -16,12 +16,12 @@ export class PostsListComponent{
   ngOnInit() : void {
     this.postsService.getAllPosts().subscribe({
       next: (posts) => {
-        this.posts = posts;
+        this.posts = posts.reverse();
         console.log(posts);
       },
       error: (response) => {
         console.log(response);
       }
-  })
+    })
   }
 }

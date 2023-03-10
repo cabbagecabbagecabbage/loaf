@@ -5,5 +5,32 @@ td a {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  color: black;
+}
+thead {
+  background-color: rgba(52, 53, 65);
+}
+* {
+  color: white;
+}
+.container {
+  margin-top: 3rem;
+}
+table {
+  border-radius: 10rem !important;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+.title-col {
+  width: 60%;
+}
+.tag-col {
+  width: 20%;
+}
+.date-col {
+  width: 20%;
+}
+thead > tr > th {
+  padding: 1rem;
+}
+tbody > tr > td {
+  padding: 0;
 }

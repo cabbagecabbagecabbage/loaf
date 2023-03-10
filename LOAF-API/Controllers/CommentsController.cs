@@ -29,7 +29,7 @@ namespace LOAF_API.Controllers
         }
 
         // POST api/Comments/Post/5
-        [HttpPost("Post/{postId}")]
+        [HttpPost("post/{postId}")]
         public async Task<IActionResult> AddCommentToPost(int postId, [FromBody] Comment comment)
         {
             comment.PostId = postId;

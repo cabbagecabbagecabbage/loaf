@@ -9,20 +9,28 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
 import { FormsModule } from '@angular/forms';
 import { ViewPostComponent } from './components/view-post/view-post.component';
 
+import { MathjaxModule } from "mathjax-angular";
+import { SearchPostsComponent } from './components/search-posts/search-posts.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     PostsListComponent,
     CreatePostComponent,
-    ViewPostComponent
+    ViewPostComponent,
+    SearchPostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MathjaxModule.forRoot(/*Optional Config*/)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
