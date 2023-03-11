@@ -11,6 +11,7 @@ import { ViewPostComponent } from './components/view-post/view-post.component';
 
 import { MathjaxModule } from "mathjax-angular";
 import { SearchPostsComponent } from './components/search-posts/search-posts.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SearchPostsComponent } from './components/search-posts/search-posts.com
     PostsListComponent,
     CreatePostComponent,
     ViewPostComponent,
-    SearchPostsComponent
+    SearchPostsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

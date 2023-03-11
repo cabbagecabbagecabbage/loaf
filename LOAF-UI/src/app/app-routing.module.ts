@@ -4,6 +4,7 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { ViewPostComponent } from './components/view-post/view-post.component';
 import { SearchPostsComponent } from './components/search-posts/search-posts.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: "search",
     component: SearchPostsComponent
+  },
+  {
+    path: "about",
+    component: AboutComponent
   },
 ];
 

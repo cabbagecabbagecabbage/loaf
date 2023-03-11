@@ -1,7 +1,7 @@
 <div class="container" style="width:60%;">
   <div class="card mt-5 mb-5">
     <div class="card-body">
-      <h2 [mathjax]="postResponse.title">
+      <h2 [mathjax]="postResponse.title" style="font-weight: 700">
       </h2>
       <hr style="border-color: black;">
       <p class="mb-5">
@@ -27,7 +27,7 @@
   </div>
   <hr style="margin: 50px 0;">
   <div class="mt-4 mb-4">
-    <h4 class="mb-4">Post an answer!</h4>
+    <h4 class="mb-4">Post an Answer</h4>
     <form #form="ngForm" (ngSubmit)="createComment()">
       <div class="mb-3">
         <!-- <label for="content" class="form-label"></label> -->

@@ -1,1 +1,1 @@
-# Lightweight Open-source Anonymous Forum
+# Lightweight & Open-source Anonymous Forum
