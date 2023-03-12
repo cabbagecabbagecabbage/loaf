@@ -20,10 +20,6 @@ const routes: Routes = [
     component: ViewPostComponent
   },
   {
-    path: "search",
-    component: SearchPostsComponent
-  },
-  {
     path: "about",
     component: AboutComponent
   },

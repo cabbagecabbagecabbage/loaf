@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Post } from '../models/post.model';
 import { PostComment } from '../models/postcomment.model';
@@ -13,6 +13,10 @@ export class PostsService {
   constructor(private http: HttpClient) { }
   getAllPosts() : Observable<Post[]>{
     return this.http.get<Post[]>(this.baseApiUrl+'/posts');
+  }
+  searchPosts(searchQuery: string) : Observable<Post[]>{
+    console.log('querying for: ' + searchQuery);
+    return this.http.get<Post[]>(this.baseApiUrl+'/posts/' + searchQuery);
   }
   createPost(createPostRequest: Post) : Observable<Post> {
     return this.http.post<Post>(this.baseApiUrl+'/posts', createPostRequest);

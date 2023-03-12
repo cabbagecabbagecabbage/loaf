@@ -22,6 +22,9 @@ export class PostsListComponent{
       error: (response) => {
         console.log(response);
       }
-    })
+    });
+  }
+  onSearchResults(results: Post[]) {
+    this.posts = results;
   }
 }

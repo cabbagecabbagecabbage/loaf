@@ -1,40 +1,17 @@
-<div class="container" style="width: 80%">
-  <div class="search-bar">
-    <form (submit)="searchPosts()" class="form-inline">
-      <div class="form-group">
+<div class="container d-flex justify-content-center" style="width: 80%">
+  <div class="search-bar my-5 d-flex align-items-center" style="width: 75%;">
+    <form (submit)="searchPosts()" class="form-inline w-100">
+      <div class="input-group w-100">
+        <button type="submit" class="btn btn-primary">Search</button>
         <input
-          type="text"
-          [(ngModel)]="searchQuery"
-          class="form-control mr-sm-2"
-          placeholder="Search posts..."
-        />
+        type="text"
+        class="form-control"
+        id="searchQuery"
+        name="searchQuery"
+        [(ngModel)]="searchQuery"
+        style="resize: none;"
+      />
       </div>
-      <button type="submit" class="btn btn-primary my-2 my-sm-0">Search</button>
     </form>
   </div>
-  <h1 class="my-5">Ask A Question</h1>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Title</th>
-        <th scope="col">Tags</th>
-        <th scope="col">Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="content" *ngFor="let post of searchResults">
-        <td class="title-col">
-          <a [routerLink]="['posts', post.id]">{{ post.title }}</a>
-        </td>
-        <td class="tag-col">
-          <a [routerLink]="['posts', post.id]">{{ post.tag }}</a>
-        </td>
-        <td class="date-col">
-          <a [routerLink]="['posts', post.id]">{{
-            post.date | date : "MM/dd/yyyy h:mm a"
-          }}</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
 </div>

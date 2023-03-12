@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Post } from 'src/app/models/post.model';
 import { PostsService } from 'src/app/services/posts.service';
@@ -11,7 +11,7 @@ import { PostsService } from 'src/app/services/posts.service';
 })
 export class SearchPostsComponent {
   searchQuery = '';
-  searchResults: Post[] = [];
+  @Output() searchResults = new EventEmitter<Post[]>();
 
   constructor(private postsService: PostsService, private router: Router) { }
 
@@ -19,8 +19,10 @@ export class SearchPostsComponent {
   }
 
   searchPosts() {
-    // this.postsService.searchPosts(this.searchQuery).subscribe(posts => {
-    //   this.searchResults = posts;
-    // });
+    console.log(this.searchQuery);
+    this.postsService.searchPosts(this.searchQuery).subscribe(posts => {
+      console.log(posts);
+      this.searchResults.emit(posts);
+    });
   }
 }

@@ -25,7 +25,20 @@ namespace LOAF_API.Controllers
             var posts = await _LOAFDbContext.Posts.ToListAsync();
             return Ok(posts);
         }
-        
+
+
+        // GET: api/Posts/searchQuery
+        [HttpGet("{searchQuery}")]
+        public async Task<IActionResult> SearchPosts(string searchQuery)
+        {
+            // log the search query in the console
+            string[] keywords = searchQuery.Split(null).Select(k => k.ToLower()).ToArray();
+            var posts = await _LOAFDbContext.Posts.ToListAsync();
+            // filter out posts that do not contain any of the keywords
+            posts = posts.Where(p => keywords.Any(k => p.Title.ToLower().Contains(k) || p.Content.ToLower().Contains(k) || p.Tag.ToLower().Contains(k))).ToList();
+            return Ok(posts);
+        }
+
         // POST api/Posts
         [HttpPost]
         public async Task<IActionResult> AddPost([FromBody] Post post)

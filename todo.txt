@@ -2,7 +2,6 @@ Features:
     search function
     number of comments on post
     swal on post/comment creation
-    get posts by tag
 
 Backend:
     image in form
@@ -15,3 +14,6 @@ Meta:
     host the project
     something something dockerize?
     release as open source software
+
+improve practices:
+    separate view post into different components
