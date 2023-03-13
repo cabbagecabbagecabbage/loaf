@@ -4,4 +4,5 @@ export interface Post {
     content: string;
     tag: string;
     date: string;
+    replies: number;
 }

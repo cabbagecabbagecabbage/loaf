@@ -34,6 +34,9 @@ namespace LOAF_API.Controllers
         {
             comment.PostId = postId;
             comment.Date = System.DateTime.Now.ToString();
+            // increment the number of replies for the post
+            var post = await _LOAFDbContext.Posts.FindAsync(postId);
+            post.Replies++;
             await _LOAFDbContext.Comments.AddAsync(comment);
             await _LOAFDbContext.SaveChangesAsync();
 

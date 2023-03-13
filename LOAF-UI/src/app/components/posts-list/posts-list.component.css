@@ -19,15 +19,6 @@ table {
   border-radius: 10rem !important;
   border: 1px solid rgba(255,255,255,0.4);
 }
-.title-col {
-  width: 60%;
-}
-.tag-col {
-  width: 20%;
-}
-.date-col {
-  width: 20%;
-}
 thead > tr > th {
   padding: 1rem;
 }

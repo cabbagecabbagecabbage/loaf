@@ -44,6 +44,7 @@ namespace LOAF_API.Controllers
         public async Task<IActionResult> AddPost([FromBody] Post post)
         {
             post.Date = System.DateTime.Now.ToString();
+            post.Replies = 0;
             await _LOAFDbContext.Posts.AddAsync(post);
             await _LOAFDbContext.SaveChangesAsync();
 

@@ -7,6 +7,7 @@
         public string Content { get; set; }
         public string Tag { get; set; }
         public string Date { get; set; }
+        public int Replies {get; set;}
 
     }
 }

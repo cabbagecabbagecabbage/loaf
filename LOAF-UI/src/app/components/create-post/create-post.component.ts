@@ -15,6 +15,7 @@ export class CreatePostComponent implements OnInit {
     "content": "",
     "tag": "",
     "date": "",
+    "replies": 0,
   }
   constructor (private postsService: PostsService, private router: Router) {}
   ngOnInit(): void {

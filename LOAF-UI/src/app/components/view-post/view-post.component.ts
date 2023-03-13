@@ -44,6 +44,7 @@ export class ViewPostComponent implements OnInit {
     "content": "",
     "tag": "",
     "date": "",
+    "replies": 0,
   };
 
   commentsResponse: PostComment[] = [];

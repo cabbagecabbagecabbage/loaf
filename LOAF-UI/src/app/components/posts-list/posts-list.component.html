@@ -1,10 +1,11 @@
-<app-search-posts  (searchResults)="onSearchResults($event)"></app-search-posts>
-<div class="container" style="width: 80%;">
+<app-search-posts (searchResults)="onSearchResults($event)"></app-search-posts>
+<div class="container" style="width: 80%">
   <table class="table">
     <thead>
       <tr>
         <!-- <th scope="col">ID</th> -->
         <th scope="col">Title</th>
+        <th scope="col"></th>
         <th scope="col">Tags</th>
         <th scope="col">Date</th>
       </tr>
@@ -12,14 +13,25 @@
     <tbody>
       <!-- <div [routerLink]="['post','post.id']"> -->
       <tr class="content" *ngFor="let post of posts">
-        <!-- <th scope="row">{{ post.id }}</th> -->
-        <td class="title-col">
+        <td class="title-col" style="width: 60%">
           <a [routerLink]="['posts', post.id]">{{ post.title }}</a>
         </td>
-        <td class="tag-col">
+        <td class="replies-col" style="width: 10%">
+          <a [routerLink]="['posts', post.id]"
+            >
+            {{ post.replies }}
+            <span
+              ><img
+                src="/assets/comment-regular.svg"
+                alt=""
+                style="height: 1rem; fill: white; margin-left: 5px;"
+            /></span></a
+          >
+        </td>
+        <td class="tag-col" style="width: 10%">
           <a [routerLink]="['posts', post.id]">{{ post.tag }}</a>
         </td>
-        <td class="date-col">
+        <td class="date-col" style="width: 20%">
           <a [routerLink]="['posts', post.id]">{{
             post.date | date : "MM/dd/yyyy h:mm a"
           }}</a>
