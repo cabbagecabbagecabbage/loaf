@@ -22,7 +22,6 @@ export class ViewPostComponent implements OnInit {
 
   createComment() {
     this.createCommentRequest.content = this.createCommentRequest.content.trim();
-    console.log(this.createCommentRequest);
     if (this.createCommentRequest.content.length == 0) return;
     this.postsService.createComment(this.createCommentRequest, String(this.postResponse.id)).subscribe({
       next: (post) => {
@@ -62,9 +61,7 @@ export class ViewPostComponent implements OnInit {
           });
           this.postsService.getComments(id).subscribe({
             next: (comments) => {
-              console.log(typeof(comments));
               this.commentsResponse = comments;
-              console.log(this.commentsResponse);
             }
           });
         }

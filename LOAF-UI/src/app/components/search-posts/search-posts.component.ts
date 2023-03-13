@@ -19,7 +19,6 @@ export class SearchPostsComponent {
   }
 
   searchPosts() {
-    console.log(this.searchQuery);
     this.postsService.searchPosts(this.searchQuery).subscribe(posts => {
       this.searchResults.emit(posts.reverse());
     });

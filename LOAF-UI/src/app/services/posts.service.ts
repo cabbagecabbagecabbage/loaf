@@ -15,7 +15,6 @@ export class PostsService {
     return this.http.get<Post[]>(this.baseApiUrl+'/posts');
   }
   searchPosts(searchQuery: string) : Observable<Post[]>{
-    console.log('querying for: ' + searchQuery);
     return this.http.get<Post[]>(this.baseApiUrl+'/posts/' + searchQuery);
   }
   createPost(createPostRequest: Post) : Observable<Post> {
@@ -28,7 +27,6 @@ export class PostsService {
     return this.http.get<PostComment[]>(this.baseApiUrl+'/comments/post/' + id);
   }
   createComment(createCommentRequest: PostComment, id: string) : Observable<PostComment>{
-    console.log(createCommentRequest);
     return this.http.post<PostComment>(this.baseApiUrl+'/comments/post/' + id, createCommentRequest);
   }
 }

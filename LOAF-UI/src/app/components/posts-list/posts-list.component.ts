@@ -17,7 +17,6 @@ export class PostsListComponent{
     this.postsService.getAllPosts().subscribe({
       next: (posts) => {
         this.posts = posts.reverse();
-        console.log(posts);
       },
       error: (response) => {
         console.log(response);
