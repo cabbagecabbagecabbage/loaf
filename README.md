@@ -18,21 +18,23 @@ LOAF (Lightweight & Open-source Anonymous Forum) is a general-purpose anonymous 
 
 ## About
 
-LOAF aims to provide a safe space for people to discuss any topic and seek help without fear of judgment or repercussions. We believe everyone should have access to a supportive community that values accessible and non-judgemental communication.
+LOAF aims to provide a safe platform for people to discuss any topic and seek help without fear of judgment or repercussions. We believe everyone should have access to a supportive community that values accessible and non-judgemental communication.
 
 Here is a demo of the project: https://loaf-ui.onrender.com/
 
-Keep in mind that this instance is hosted using a free service and does not accurately reflect the expected performance of LOAF.
-
+Keep in mind that this demo is hosted on a free service (render.com) and does not accurately reflect the expected performance of LOAF. In particular, you may have to wait more than 10 seconds for the server to wake up if it has been inactive for a while.
 
 ### Lightweight
+
 LOAF is designed to be lightweight, meaning it does not require excessive resources or contain unnecessary elements, such as advertisements or pop-ups. This makes LOAF accessible to a broader range of users, including those with slower internet connections or older devices. The design philosophy of LOAF is to provide an intuitive and smooth user experience.
 
 ### Open-source
-As an open-source software, the source code is publicly available for anyone to review and contribute to. This allows us to benefit from the collective knowledge and expertise of the community, resulting in a more secure and stable platform. Moreover, this means anyone can deploy their own instance of LOAF and control and modify it for whatever purpose they need.
+
+As open-source software, the source code is publicly available for anyone to review and contribute to. This ensures transparency and allows the project to benefit from the collective knowledge and expertise of the community. Moreover, anyone can deploy their own instance of LOAF and control and modify it for whatever purpose they need.
 
 ### Anonymous
-Anonymity is the core principle of LOAF. It does not collect any personally identifiable information from our users or store IP addresses or other identifying data. This ensures that people can participate in discussions without fear of being traced or tracked.
+
+Anonymity is the core principle of LOAF. It does not collect any personally identifiable information from users or store IP addresses or other identifying data. This ensures that people can participate in discussions without fear of being traced or tracked.
 
 ### Other Features
 
@@ -47,7 +49,7 @@ LOAF has two components: LOAF-UI (frontend) and LOAF-API (backend). This means y
 
 Of course, you can also use only one of them and develop your own frontend or backend.
 
-### Docker
+### Using Docker
 
 You can deploy LOAF using the Docker images. Make sure to configure the environment variables, as described in step 4 of the [installation instructions](#installation).
 
