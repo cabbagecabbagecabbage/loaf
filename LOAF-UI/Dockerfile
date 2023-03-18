@@ -1,23 +1,28 @@
-# Set base image to 16.13.0-alpine
-FROM node:latest
+# Stage 1: Compile and Build angular codebase
 
-# Set working directory
-WORKDIR /app
+# Use official node image as the base image
+FROM node:latest as build
 
-# Copy package.json and package-lock.json files
-COPY package*.json ./
+# Set the working directory
+WORKDIR /usr/local/app
 
-# Install dependencies
+# Add the source code to app
+COPY ./ /usr/local/app/
+
+# Install all the dependencies
 RUN npm install --force
 
-# Copy application code
-COPY . .
+# Generate the build of the application
+RUN npm run build
 
-# Build the Angular application
-RUN npm run build --prod
 
-# Expose port
+# Stage 2: Serve app with nginx server
+
+# Use official nginx image as the base image
+FROM nginx:latest
+
+# Copy the build output to replace the default nginx contents.
+COPY --from=build /usr/local/app/dist/loaf-ui /usr/share/nginx/html
+
+# Expose port 80
 EXPOSE 80
-
-# Start the application
-CMD ["npm", "run", "start"]
