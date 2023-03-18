@@ -1,10 +1,10 @@
 # LOAF
 
-LOAF (Lightweight & Open-source Anonymous Forum) is a basic, general-purpose anonymous Q&A platform. Built with Angular, ASP.NET Core Web API, and SQLite.
+LOAF (Lightweight & Open-source Anonymous Forum) is a basic, general-purpose anonymous Q&A platform application built with Angular, ASP.NET Core Web API, and SQLite.
 
 ## Table of Contents
 
-- [Project Name](#project-name)
+- [LOAF](#LOAF)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
   - [Getting Started](#getting-started)
@@ -14,7 +14,7 @@ LOAF (Lightweight & Open-source Anonymous Forum) is a basic, general-purpose ano
 
 ## About
 
-LOAF provides a safe space for people to discuss any topic and seek help without fear of judgment or repercussions. We believe everyone should have access to a supportive community that values accessible and non-judgemental communication.
+LOAF aims to provide a safe space for people to discuss any topic and seek help without fear of judgment or repercussions. We believe everyone should have access to a supportive community that values accessible and non-judgemental communication.
 
 ### Lightweight
 LOAF is designed to be lightweight, meaning it does not require excessive resources or contain unnecessary elements, such as advertisements or pop-ups. This makes LOAF accessible to a broader range of users, including those with slower internet connections or older devices. The design philosophy of LOAF is to provide an intuitive and smooth user experience.
@@ -60,43 +60,43 @@ Before you begin, you will need to have the following software installed on your
 
 1. Clone the GitHub repository:
 
-```console
+```
 git clone https://github.com/cabbagecabbagecabbage/LOAF.git
 ```
 
 2. Navigate to the LOAF-API directory:
 
-```console
+```
 cd LOAF/LOAF-API
 ```
 
 3. Run the backend API:
 
-```console
+```
 dotnet run
 ```
 
 4. Edit the LOAF-UI/src/environments/environment.ts file, and replace apiUrl with the URL where LOAF-API is listening + '/api'. For example:
 
-```console
+```
 apiUrl: 'http://localhost:5000/api'
 ```
 
 5. Navigate to the LOAF-UI directory (assuming you are still in the LOAF-API directory):
 
-```console
+```
 cd ../LOAF-UI
 ```
 
 6. Install dependencies:
 
-```console
+```
 npm install --force
 ```
 
 7. Run the frontend:
 
-```console
+```
 ng serve
 ```
 
