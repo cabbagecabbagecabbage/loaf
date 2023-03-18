@@ -22,7 +22,7 @@ LOAF aims to provide a safe platform for people to discuss any topic and seek he
 
 Here is a demo of the project: https://loaf-ui.onrender.com/
 
-Keep in mind that this demo is hosted on a free service (render.com) and does not accurately reflect the expected performance of LOAF. In particular, you may have to wait more than 10 seconds for the server to wake up if it has been inactive for a while.
+Keep in mind that this demo is hosted using a free service (render.com) and does not accurately reflect the expected performance of LOAF. In particular, you may have to wait more than 10 seconds for the server to wake up if it has been inactive for a while.
 
 ### Lightweight
 
