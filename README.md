@@ -16,6 +16,11 @@ LOAF (Lightweight & Open-source Anonymous Forum) is a basic, general-purpose ano
 
 LOAF aims to provide a safe space for people to discuss any topic and seek help without fear of judgment or repercussions. We believe everyone should have access to a supportive community that values accessible and non-judgemental communication.
 
+Here is a demo of the project: https://loaf-ui.onrender.com/
+
+Keep in mind that this instance is hosted using a free service and does not accurately reflect the expected performance of LOAF.
+
+
 ### Lightweight
 LOAF is designed to be lightweight, meaning it does not require excessive resources or contain unnecessary elements, such as advertisements or pop-ups. This makes LOAF accessible to a broader range of users, including those with slower internet connections or older devices. The design philosophy of LOAF is to provide an intuitive and smooth user experience.
 
@@ -25,11 +30,6 @@ As an open-source software, the source code is publicly available for anyone to 
 ### Anonymous
 Anonymity is the core principle of LOAF. It does not collect any personally identifiable information from our users or store IP addresses or other identifying data. This ensures that people can participate in discussions without fear of being traced or tracked.
 
-### Demo
-
-Here is a demo of the project: https://loaf-ui.onrender.com/
-
-Keep in mind that this instance is hosted using a free service and does not accurately reflect the expected performance of LOAF.
 
 ## Getting Started
 
