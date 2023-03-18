@@ -1,6 +1,5 @@
 Features:
-    search function
-    number of comments on post
+    fix post and about pages
     swal on post/comment creation
 
 Backend:
@@ -10,10 +9,5 @@ Backend:
 Frontend:
     ui design
 
-Meta:
-    host the project
-    something something dockerize?
-    release as open source software
-
-improve practices:
+Low Priority:
     separate view post into different components
