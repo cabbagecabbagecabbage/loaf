@@ -1,6 +1,8 @@
 # LOAF
 
-<center><img src="https://openclipart.org/image/2000px/213638" alt="LOAF" width="400"></center>
+<p align="center">
+  <img src="https://openclipart.org/image/2000px/213638" alt="LOAF" width="400">
+</p>
 
 LOAF (Lightweight & Open-source Anonymous Forum) is a basic, general-purpose anonymous Q&A platform application built with Angular, ASP.NET Core, and SQLite.
 
