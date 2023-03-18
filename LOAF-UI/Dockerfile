@@ -21,6 +21,9 @@ RUN npm run build
 # Use official nginx image as the base image
 FROM nginx:latest
 
+# Copy the default.conf file to configure nginx
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+
 # Copy the build output to replace the default nginx contents.
 COPY --from=build /usr/local/app/dist/loaf-ui /usr/share/nginx/html
 
