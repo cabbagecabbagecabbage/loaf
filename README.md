@@ -30,20 +30,29 @@ As an open-source software, the source code is publicly available for anyone to 
 ### Anonymous
 Anonymity is the core principle of LOAF. It does not collect any personally identifiable information from our users or store IP addresses or other identifying data. This ensures that people can participate in discussions without fear of being traced or tracked.
 
+### Other Features
+
+- **Search** - Users can search for posts and threads using keywords.
+- **Post Tags** - Users can tag posts with keywords to make them easier to find. You can modify the list of tags in the LOAF-UI\src\app\components\create-post\create-post.component.html file.
+- **HTML Support** - Users can use HTML tags to format their posts.
+- **MathJax Support** - Users can use LaTeX to display mathematical notation.
 
 ## Getting Started
 
-There are two components to LOAF: LOAF-UI and LOAF-API.
+LOAF has two components: LOAF-UI (frontend) and LOAF-API (backend). This means you will need to deploy both components to use LOAF out of the box. 
+
+Of course, you can also use only one of them and develop your own frontend or backend.
 
 ### Docker
 
-You can deploy LOAF using the Docker images.
+You can deploy LOAF using the Docker images. Make sure to configure the environment variables, as described in step 4 of the [installation instructions](#installation).
+
 
 LOAF-UI: https://hub.docker.com/repository/docker/cabbagecabbagecabbage/loaf-ui/general
 
 LOAF-API: https://hub.docker.com/repository/docker/cabbagecabbagecabbage/loaf-api/general
 
-You can also build your own images using the Dockerfiles in the respective folders.
+You can also build your own images using the Dockerfiles in the respective folders. This may be preferred if you want to modify the source code before deploying.
 
 ### Using This Repository
 
@@ -106,7 +115,7 @@ Congratulations! Your instance of LOAF is now set up and ready to use.
 
 ## Contributing
 
-Feel free to contribute through pull requests or issues. Please make sure your contributions align with the project's goals and principles.
+This is a very early version of LOAF, so there is a lot of room for improvement. Feel free to contribute through pull requests or issues. Please make sure your contributions align with the project's goals and principles.
 
 ## License
 
