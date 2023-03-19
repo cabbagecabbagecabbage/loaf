@@ -51,8 +51,7 @@ Of course, you can also use only one of them and develop your own frontend or ba
 
 ### Using Docker
 
-You can deploy LOAF using the Docker images. Make sure to configure the environment variables, as described in step 4 of the [installation instructions](#installation).
-
+You can deploy LOAF using the Docker images. Make sure to configure the API URL in the frontend before deploying.
 
 LOAF-UI: https://hub.docker.com/r/cabbagecabbagecabbage/loaf-ui
 
