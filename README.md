@@ -70,7 +70,7 @@ Before you begin, you will need to have the following software installed on your
 - Node.js
 - Angular CLI
 
-#### Installation
+#### Installation For Local Development
 
 1. Clone the GitHub repository:
 
