@@ -1,42 +1,12 @@
-# LOAF
+# LOAF 🍞
 
-<p align="center">
-  <img src="https://openclipart.org/image/2000px/213638" alt="LOAF" width="400">
-</p>
-
-LOAF (Lightweight & Open-source Anonymous Forum) is a general-purpose anonymous Q&A platform application built with Angular, ASP.NET Core, and SQLite.
-
-## Table of Contents
-
-- [LOAF](#LOAF)
-  - [Table of Contents](#table-of-contents)
-  - [About](#about)
-  - [Getting Started](#getting-started)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
-
-## About
-
-LOAF aims to provide a safe platform for people to discuss any topic and seek help without fear of judgment or repercussions. We believe everyone should have access to a supportive community that values accessible and non-judgemental communication.
+LOAF is a general-purpose anonymous Q&A platform built with Angular, ASP.NET Core, and SQLite.
 
 Here is a demo of the project: https://loaf-ui.onrender.com/
 
-Keep in mind that this demo is hosted using a free service (render.com) and does not accurately reflect the expected performance of LOAF. In particular, you may have to wait over 10 seconds for the server to wake up if it has been inactive for a while.
+Keep in mind that this demo is hosted using a free service and does not accurately reflect the expected performance of LOAF. In particular, you may have to wait over 10 seconds for the server to wake up if it has been inactive for a while.
 
-### Lightweight
-
-LOAF is designed to be lightweight, meaning it does not require excessive resources or contain unnecessary elements, such as advertisements or pop-ups. This makes LOAF accessible to a broader range of users, including those with slower internet connections or older devices. The design philosophy of LOAF is to provide an intuitive and smooth user experience.
-
-### Open-source
-
-As open-source software, the source code is publicly available for anyone to review and contribute to. This ensures transparency and allows the project to benefit from the collective knowledge and expertise of the community. Moreover, anyone can deploy their own instance of LOAF and control and modify it for whatever purpose they need.
-
-### Anonymous
-
-Anonymity is the core principle of LOAF. It does not collect any personally identifiable information from users or store IP addresses or other identifying data. This ensures that people can participate in discussions without fear of being traced or tracked.
-
-### Other Features
+## Features
 
 - **Search** - Users can search for posts and threads using keywords.
 - **Post Tags** - Users can tag posts with keywords to make them easier to find. You can modify the list of tags in the LOAF-UI\src\app\components\create-post\create-post.component.html file.
@@ -116,11 +86,7 @@ ng serve
 
 8. Once the frontend UI is running, open your web browser and navigate to http://localhost:4200. You should see some placeholder threads on the homepage.
 
-Congratulations! Your instance of LOAF is now set up and ready to use.
-
-## Contributing
-
-This is a very early version of LOAF, so there is a lot of room for improvement. Feel free to contribute through pull requests or issues. Please make sure your contributions align with the project's goals and principles.
+Your instance of LOAF is now set up and ready to use.
 
 ## License
 
