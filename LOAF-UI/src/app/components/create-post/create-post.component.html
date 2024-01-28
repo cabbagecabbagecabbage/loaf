@@ -1,44 +1,50 @@
-<div class="container" style="width: 60%;">
-  <h1 class="mb-5 mt-5">Ask a Question</h1>
-  <form #form="ngForm" (ngSubmit)="createPost()">
-    <div class="mb-3">
-      <label class="form-label">Title</label>
-      <input
-        type="text"
-        class="form-control"
-        id="title"
-        name="title"
-        [(ngModel)]="createPostRequest.title"
-        style="resize: none;"
-      />
+<div class="container" style="width: 60%">
+  <div class="card mt-5">
+    <div class="card-body p-4">
+      <h1 class="mb-5">Ask a Question</h1>
+      <form #form="ngForm" (ngSubmit)="createPost()">
+        <div class="mb-3">
+          <label class="form-label">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            [(ngModel)]="createPostRequest.title"
+            style="resize: none"
+          />
+        </div>
+        <br />
+        <label class="form-label">Tag</label>
+        <select
+          class="form-select mb-3"
+          id="tag"
+          name="tag"
+          [(ngModel)]="createPostRequest.tag"
+        >
+          <option value="General">General</option>
+          <option value="Chemistry">Chemistry</option>
+          <option value="Physics">Physics</option>
+          <option value="Biology">Biology</option>
+          <option value="Math">Math</option>
+          <option value="English">English</option>
+          <option value="Misc">Misc</option>
+        </select>
+        <br />
+        <div class="mb-3">
+          <label class="form-label">Content</label>
+          <textarea
+            type="text"
+            class="form-control"
+            id="content"
+            name="content"
+            rows="5"
+            [(ngModel)]="createPostRequest.content"
+            style="resize: none"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Post</button>
+      </form>
     </div>
-    <label class="form-label">Tag</label>
-    <select
-      class="form-select mb-3"
-      id="tag"
-      name="tag"
-      [(ngModel)]="createPostRequest.tag"
-    >
-      <option value="General">General</option>
-      <option value="Chemistry">Chemistry</option>
-      <option value="Physics">Physics</option>
-      <option value="Biology">Biology</option>
-      <option value="Math">Math</option>
-      <option value="English">English</option>
-      <option value="Misc">Misc</option>
-    </select>
-    <div class="mb-3">
-      <label class="form-label">Content</label>
-      <textarea
-        type="text"
-        class="form-control"
-        id="content"
-        name="content"
-        rows="5"
-        [(ngModel)]="createPostRequest.content"
-        style="resize: none;"
-      ></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary mt-3">Post</button>
-  </form>
+  </div>
 </div>

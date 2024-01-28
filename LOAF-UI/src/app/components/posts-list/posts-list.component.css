@@ -7,17 +7,17 @@ td a {
   text-decoration: none;
 }
 thead {
-  background-color: rgba(52, 53, 65);
+  background-color: #2ecc71;
 }
 * {
-  color: white;
+  color: #333333;
 }
 .container {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 table {
   border-radius: 10rem !important;
-  border: 1px solid rgba(255,255,255,0.4);
+  border: 1px solid rgba(0,0,0,0.4);
 }
 thead > tr > th {
   padding: 1rem;
