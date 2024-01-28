@@ -1,4 +1,4 @@
 export const environment = {
-    production: true,
-    apiUrl: 'https://loaf-api.azurewebsites.net/api'
+    production: false,
+    apiUrl: 'https://loaf-api.onrender.com/api'
 };
