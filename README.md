@@ -1,4 +1,4 @@
-# LOAF 🍞
+# loaf 🍞
 
 <br>
 
@@ -8,7 +8,7 @@
 
 <br>
 
-LOAF is a general-purpose anonymous Q&A platform built with Angular, ASP.NET Core, and SQLite.
+loaf is a general-purpose anonymous Q&A platform built with Angular, ASP.NET Core, and SQLite.
 
 Here is a demo of the project: https://loaf-ui.onrender.com/
 
@@ -23,13 +23,13 @@ Keep in mind that this demo is hosted using a free service and does not accurate
 
 ## Getting Started
 
-LOAF has two components: LOAF-UI (frontend) and LOAF-API (backend). This means you will need to deploy both components to use LOAF out of the box. 
+loaf has two components: LOAF-UI (frontend) and LOAF-API (backend). This means you will need to deploy both components to use loaf out of the box. 
 
 Of course, you can also use only one of them and develop your own frontend or backend.
 
 ### Using Docker
 
-You can deploy LOAF using the Docker images. Make sure to configure the API URL in the frontend before deploying.
+You can deploy loaf using the Docker images. Make sure to configure the API URL in the frontend before deploying.
 
 LOAF-UI: https://hub.docker.com/r/cabbagecabbagecabbage/loaf-ui
 
