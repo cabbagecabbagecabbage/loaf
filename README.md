@@ -1,6 +1,12 @@
 # LOAF 🍞
 
-<img align="center" src="https://raytonchen.com/images/projects/LOAF.png" width=400>
+<br>
+
+<div align="center">
+  <img src="https://raytonchen.com/images/projects/LOAF.png" width=400>
+</div>
+
+<br>
 
 LOAF is a general-purpose anonymous Q&A platform built with Angular, ASP.NET Core, and SQLite.
 
