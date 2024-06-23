@@ -1,12 +1,12 @@
 # LOAF 🍞
 
-<img src="https://raytonchen.com/images/projects/LOAF.png" width=800>
+<img align="center" src="https://raytonchen.com/images/projects/LOAF.png" width=400>
 
 LOAF is a general-purpose anonymous Q&A platform built with Angular, ASP.NET Core, and SQLite.
 
 Here is a demo of the project: https://loaf-ui.onrender.com/
 
-Keep in mind that this demo is hosted using a free service and does not accurately reflect the expected performance of LOAF. In particular, you may have to wait over 10 seconds for the server to wake up if it has been inactive for a while.
+Keep in mind that this demo is hosted using a free service and does not accurately reflect the expected performance. In particular, you may have to wait over 10 seconds for the server to wake up if it has been inactive for a while.
 
 ## Features
 
