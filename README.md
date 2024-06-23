@@ -94,8 +94,8 @@ ng serve
 
 8. Once the frontend UI is running, open your web browser and navigate to http://localhost:4200. You should see some placeholder threads on the homepage.
 
-Your instance of LOAF is now set up and ready to use.
+Your instance of loaf is now set up and ready to use.
 
 ## License
 
-LOAF is licensed under the MIT License. See the [LICENSE](https://github.com/cabbagecabbagecabbage/LOAF/blob/master/LICENSE) file for more details.
+loaf is licensed under the MIT License. See the [LICENSE](https://github.com/cabbagecabbagecabbage/LOAF/blob/master/LICENSE) file for more details.
